@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_descriptions",
+  "info": {
+    "singularName": "item-description",
+    "pluralName": "item-descriptions",
+    "displayName": "Item Description",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "desc": {
+      "type": "richtext"
+    },
+    "item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item",
+      "mappedBy": "item_description"
+    }
+  }
+}

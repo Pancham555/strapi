@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trendings",
+  "info": {
+    "singularName": "trending",
+    "pluralName": "trendings",
+    "displayName": "Trending"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "trending"
+    }
+  }
+}
