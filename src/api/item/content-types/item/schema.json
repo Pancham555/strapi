@@ -20,10 +20,10 @@
         "images"
       ]
     },
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "Breakfast",
@@ -32,17 +32,11 @@
         "Dinner"
       ]
     },
-    "Servings": {
+    "servings": {
       "type": "integer"
     },
-    "Expected_time_in_minutes": {
+    "expected_time_in_minutes": {
       "type": "decimal"
-    },
-    "trending": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::trending.trending",
-      "inversedBy": "items"
     },
     "item_description": {
       "type": "relation",
